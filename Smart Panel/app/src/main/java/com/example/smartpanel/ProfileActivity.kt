@@ -51,7 +51,6 @@ class ProfileActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
         bottomNavigationView.selectedItemId = R.id.profile
         database = FirebaseDatabase.getInstance().reference
         fetchUserData()
@@ -74,7 +73,6 @@ class ProfileActivity : AppCompatActivity() {
                         Log.d("ProfileActivity", "No such document")
                     }
                 }
-
                 override fun onCancelled(error: DatabaseError) {
                     Log.d("ProfileActivity", "get failed with ", error.toException())
                 }

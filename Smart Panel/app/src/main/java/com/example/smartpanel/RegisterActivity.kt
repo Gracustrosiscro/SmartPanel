@@ -17,9 +17,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var password: EditText
     private lateinit var btnRegist: Button
 
-    // Referensi Firebase Authentication
     private val mAuth: FirebaseAuth = FirebaseAuth.getInstance()
-    // Referensi Firebase Database
     private lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {

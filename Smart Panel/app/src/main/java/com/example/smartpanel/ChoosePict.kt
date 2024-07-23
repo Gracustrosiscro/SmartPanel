@@ -14,7 +14,7 @@ class ChoosePict(
     private val profileImage: ImageView,
     private val choosePhotoButton: ImageButton,
     private val editPhotoButton: ImageButton
-) {
+){
 
     private val PICK_IMAGE_REQUEST = 1
 

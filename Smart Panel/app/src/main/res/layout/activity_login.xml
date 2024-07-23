@@ -11,8 +11,7 @@
         android:id="@+id/top_view"
         android:layout_width="match_parent"
         android:layout_height="450dp"
-        android:background="@drawable/bg_view"
-        />
+        android:background="@drawable/bg_view" />
 
         <TextView
             android:id="@+id/txt1"
@@ -46,15 +45,16 @@
         android:padding="20dp">
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/identifier"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/button_shape"
             android:fontFamily="@font/poppinsmedium"
-            android:hint="@string/email"
+            android:hint="@string/identifier"
             android:paddingStart="10dp"
             android:textColorHint="@color/white"
             android:elevation="5dp"
+            android:inputType="text"
             tools:ignore="RtlSymmetry" />
 
         <EditText
@@ -70,7 +70,6 @@
             android:elevation="5dp"
             android:textColorHint="@color/white"
             tools:ignore="RtlSymmetry" />
-
     </LinearLayout>
 
     <Button
@@ -116,7 +115,4 @@
                 android:id="@+id/Regist"/>
 
         </LinearLayout>
-
-
-
 </RelativeLayout>

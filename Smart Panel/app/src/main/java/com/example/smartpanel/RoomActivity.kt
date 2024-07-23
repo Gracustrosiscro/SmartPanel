@@ -11,34 +11,31 @@ class RoomActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room)
 
-        // Inisialisasi CardView
         val cardViewRoom1 = findViewById<CardView>(R.id.room1)
         val cardViewRoom2 = findViewById<CardView>(R.id.room2)
         val cardViewRoom3 = findViewById<CardView>(R.id.room3)
         val cardViewRoom4 = findViewById<CardView>(R.id.room4)
 
-        // Set OnClickListener untuk masing-masing CardView
         cardViewRoom1.setOnClickListener {
-            val intent = Intent(this, LampActivity::class.java)
+            val intent = Intent(this, DevicesActivity::class.java)
             startActivity(intent)
         }
 
         cardViewRoom2.setOnClickListener {
-            val intent = Intent(this, LampActivity::class.java)
+            val intent = Intent(this, DevicesActivity::class.java)
             startActivity(intent)
         }
 
         cardViewRoom3.setOnClickListener {
-            val intent = Intent(this, LampActivity::class.java)
+            val intent = Intent(this, DevicesActivity::class.java)
             startActivity(intent)
         }
 
         cardViewRoom4.setOnClickListener {
-            val intent = Intent(this, LampActivity::class.java)
+            val intent = Intent(this, DevicesActivity::class.java)
             startActivity(intent)
         }
 
-        // Menghubungkan BottomNavigationView
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -49,7 +46,6 @@ class RoomActivity : AppCompatActivity() {
                 }
 
                 R.id.home ->  {
-                    // Jangan buat Intent baru untuk RoomActivity
                     true
                 }
 
@@ -63,7 +59,6 @@ class RoomActivity : AppCompatActivity() {
             }
         }
 
-        // Atur item yang terpilih saat pertama kali masuk ke RoomActivity
         bottomNavigationView.selectedItemId = R.id.home
     }
 }

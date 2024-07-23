@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.smartpanel.RetrofitClient.retrofit
 import com.example.smartpanel.model.LoginModel
-import com.example.smartpanel.LoginResponseData
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -26,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        identifier = findViewById(R.id.email)
+        identifier = findViewById(R.id.identifier)
         password = findViewById(R.id.password)
         buttonLogin = findViewById(R.id.btnLogin)
 
